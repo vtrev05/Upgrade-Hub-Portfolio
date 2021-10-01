@@ -11,15 +11,15 @@
 </head>
 <body>
     <div class="container">
-       <header class="header">
-            <div class="images">
-                <img class="background__image" src="./assets/images/bckimage.png" alt="backgroundImage">
-                <img class="profile__image" src="./assets/images/sort-right.png" alt="profilePicture">
+       <header id="header" class="header">
+            <div class="header__images">
+                <img class="header__images__background__image" src="./assets/images/bckimage.png" alt="backgroundImage">
+                <img class="header__images__profile__image" src="./assets/images/sort-right.png" alt="profilePicture">
             </div>
-            <div class="text">
-                <h1 class="title">VÍCTOR TREVIJANO</h1>
-                <h2 class="subtitle">FULL-STACK DEVELOPER</h2>
-                <p class="info">He desarrollado mi carrera profesional en el mundo empresarial, concretamente en una startup. Tras más de un año creciendo junto a la empresa y con motivo del Covid-19, nuestros caminos se separaron. Sin miedo al desafío, ahora construyo un nuevo horizonte desde el lado más técnico como programador Full-Stack.</p>
+            <div class="header__text">
+                <h1 class="header__text__title">VÍCTOR TREVIJANO</h1>
+                <h2 class="header__text__subtitle">FULL-STACK DEVELOPER</h2>
+                <p class="header__text__info">He desarrollado mi carrera profesional en el mundo empresarial, concretamente en una startup. Tras más de un año creciendo junto a la empresa y con motivo del Covid-19, nuestros caminos se separaron. Sin miedo al desafío, ahora construyo un nuevo horizonte desde el lado más técnico como programador Full-Stack.</p>
             </div>
             
         </header>
@@ -49,24 +49,30 @@
                       <span>vtrev05 </span>
                     </a>
                   </li>
+                  <li>
+                    <a class="nav--links__link" href="./assets/documents/CV Victor Trevijano front-end-final.pdf" target="_blank">
+                        <i class="fas fa-file-pdf"></i>
+                      <span> Descargar CV</span>
+                    </a>
+                  </li>
             </ul>
         </nav>
         <div id="education" class="education">
                     <h2 class="education--title uppercase">Formación</h2>
                     <div class="upgrade">
-                        <h3 class="developer__title">Upgrade Hub</h3>
-                        <h4 class="developer__subtitle">Curso intensivo de Desarrollo Full-Stack // 2021</h4>
+                        <h3 class="upgrade--developer__title">Upgrade Hub</h3>
+                        <h4 class="upgrade-developer__subtitle">Curso intensivo de Desarrollo Full-Stack // 2021</h4>
                         <ul>
-                            <li class="knowledge">Maquetación: HTML5, CSS3, Flexbox, CSS Grid, SASS, Bootstrap.</li>
-                            <li class="knowledge">Programación Web: Vanilla JavaScript y servicios web (APIS) de terceros, React, Angular JS.</li>
-                            <li class="knowledge">Control de versiones con Git, Github.</li>
-                            <li class="knowledge">Filosofía Agile y marco de trabajo Scrum</li>
+                            <li class="upgrade-developer__knowledge">Maquetación: HTML5, CSS3, Flexbox, CSS Grid, SASS, Bootstrap.</li>
+                            <li class="upgrade-developer__knowledge">Programación Web: Vanilla JavaScript y servicios web (APIS) de terceros, React, Angular JS.</li>
+                            <li class="upgrade-developer__knowledge">Control de versiones con Git, Github.</li>
+                            <li class="upgrade-developer__knowledge">Filosofía Agile y marco de trabajo Scrum</li>
                         </ul>
                     </div>
                     <div class="university">
-                        <h2 class="degree">Grado en Administración y Dirección de Empresas</h2>
-                        <h2 class="degree">Grado en Comunicación Audiovisual</h2>
-                        <p class="small__subtitle">Universidad Rey Juan Carlos // 2014-2020</p>
+                        <h2 class="university__degree">Grado en Administración y Dirección de Empresas</h2>
+                        <h2 class="university__degree">Grado en Comunicación Audiovisual</h2>
+                        <p class="university__degree__small__subtitle">Universidad Rey Juan Carlos // 2014-2020</p>
                     </div>
         </div>
         <div id="projects" class="projects">
@@ -121,14 +127,18 @@
             <div class="footer__links">
                 <ul>
                     <li>
-                        <a class="footer__links__link" href="#education" rel="education">FORMACIÓN</a>
+                        <a class="footer__links__link" href="#header" rel="header__link">INICIO</a>
                     </li>
                     <li>
-                        <a class="footer__links__link" href="#projects" rel="projects">PROYECTOS</a>
+                        <a class="footer__links__link" href="#education" rel="education__link">FORMACIÓN</a>
                     </li>
                     <li>
-                        <a class="footer__links__link" href="#skills" rel="skills">SKILLS</a>
+                        <a class="footer__links__link" href="#skills" rel="skills__link">SKILLS</a>
                     </li>
+                    <li>
+                        <a class="footer__links__link" href="#projects" rel="projects__link">PROYECTOS</a>
+                    </li>
+                    
                 </ul>
             </div>
         </footer>

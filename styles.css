@@ -18,10 +18,7 @@ body{
 /* CONTAINER PRINCIPAL */
 
 .container{
-    margin: 0 auto;
-    max-width: 1500px;
     width: 85%;
-    height: 100%;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-areas: "header header" "nav nav" "education skills" "projects projects" "footer footer";
@@ -34,25 +31,22 @@ body{
     display: flex;
     flex-wrap: wrap;
     width: 100%;
-    height: auto;
     background: linear-gradient(hsl(273, 75%, 66%),
     hsl(240, 73%, 65%));
 }
-.images{
+.header__images{
     margin-left: 50px;
 }
-.background__image{
+.header__images__background__image{
     width: 32vw;
-    height: auto;
 }
-.profile__image{
+.header__images__profile__image{
     width: 10vw;
     border-radius: 50%;
-    z-index: 999;
     background-color: rgba(245, 245, 245, 0.781);
     margin-bottom: 100px;
 }
-.text{
+.header__text{
     color: rgba(245, 245, 245, 0.849);
     font-weight: 200;
     width: 600px;
@@ -60,15 +54,15 @@ body{
     position: relative;
     left: 80px;
 }
-.title{
+.header__text__title{
     margin-top: 60px;
 }
-.subtitle{
+.header__text__subtitle{
     margin-top: 15px;
     font-size: 20px;
     font-weight: 400;
 }
-.info{
+.header__text__info{
     margin: 25px 0;
     width: 75%;
     line-height: 1.45;
@@ -83,7 +77,6 @@ body{
     grid-area: nav;
     width: 100%;
     border-bottom: 5px solid whitesmoke;
-    
 }
 .nav--links{
     display: flex;
@@ -94,11 +87,11 @@ body{
 .nav--links__link{
     text-align: center;
     color: whitesmoke;
-    border: whitesmoke 3px solid;
+    border: whitesmoke 2px solid;
     font-weight: 400;
     font-size: 1.25rem;
     border-radius: 8px;
-    padding: 10px;
+    padding: 13px;
     margin: 20px;
 }
 .nav--links__link:hover{
@@ -110,7 +103,6 @@ body{
 
 .education{
     grid-area: education;
-    width: 100%;
 }
 .education--title, .skills__title{
     background-color: hsl(240, 73%, 65%);
@@ -124,18 +116,18 @@ body{
 .upgrade, .university{
     margin: 25px 0 25px 15px;
 }
-.developer__title, .degree, .frontendMentor__info h2{
+.upgrade--developer__title, .university__degree, .frontendMentor__info h2{
     font-size: 30px;
     font-weight: 700;
     color: hsl(240, 73%, 65%);
     margin-bottom: 10px;
 }
-.developer__subtitle, .small__subtitle, .frontendMentor__info h3{
+.upgrade-developer__subtitle, .university__degree__small__subtitle, .frontendMentor__info h3{
     font-size: 20px;
     font-weight: 700;
     margin-bottom: 10px;
 }
-.knowledge, .frontendMentor__info p {
+.upgrade-developer__knowledge, .frontendMentor__info p {
     margin-left: 0;
     width: 90%;
     font-size: 1.275rem;
@@ -151,11 +143,9 @@ body{
 }
 .frontendMentor__images{
     display: flex;
-    flex-direction: column;
-    
+    flex-direction: column;  
 }
 .frontendMentor__info{
-    width: 100%;
     text-align: center;
 }
 
@@ -166,7 +156,6 @@ body{
 }
 
 .card{
-    display: inline-block;
     width: 85%; 
 }
 
@@ -184,20 +173,18 @@ body{
 .skills{
     grid-area: skills;
     width: 100%;
-    max-height: 700px;
 }
 .skills ul{
-    margin: 20px 0;
+    margin: 20px 0 0 0;
     display: flex;
-    justify-content: space-around;
     flex-wrap: wrap;
     color: whitesmoke;
 }
 .skill__list--item{
     padding: .4375rem .9375rem;
     border-radius: .3125rem;
-    margin-bottom: 1.25rem;
-    margin-right: 1.25rem;
+    margin-bottom: 1rem;
+    margin-right: 1rem;
     background-color: hsl(240, 73%, 65%);
 }
 
@@ -229,13 +216,16 @@ body{
     margin: 5px;
 }
 
-@media (max-width: 1524px) {
-    /* HEADER */
+/* MEDIA QUERY LARGE */
 
-.background__image{
+@media (max-width: 1524px) {
+
+/* HEADER */
+
+.header__images__background__image{
     display: none;
 }
-.profile__image{
+.header__images__profile__image{
     width: 10vw;
     margin-bottom: 0;
     position: relative;
@@ -243,11 +233,13 @@ body{
     left: 100px;
 }}
 
+/* MEDIA QUERY DESKTOP */
+
 @media (max-width: 1268px) {
 
     /* HEADER */
 
-.profile__image{
+.header__images__profile__image{
     top: 130px;
     left: 40px;
 }
@@ -261,11 +253,14 @@ body{
     flex-direction: column;
     padding: -11px;
 }}
+
+/* MEDIA QUERY SMALL DEVICES */
+
 @media (max-width: 870px) {
 
     /* HEADER */
 
-.profile__image{
+.header__images__profile__image{
     display: none;
 }
 
