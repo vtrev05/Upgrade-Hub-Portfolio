@@ -215,6 +215,13 @@ body{
     padding: 10px;
     margin: 5px;
 }
+.footer__copyright{
+    text-align: center;
+    color: hsl(240, 73%, 65%);
+    padding: 15px;
+    font-weight: 700;
+    font-size: 1.25rem;
+}
 
 /* MEDIA QUERY LARGE */
 
