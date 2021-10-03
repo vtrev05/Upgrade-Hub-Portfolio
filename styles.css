@@ -265,13 +265,14 @@ body{
 
 @media (max-width: 870px) {
 
-    /* HEADER */
+
+/* HEADER */
 
 .header__images__profile__image{
     display: none;
 }
 
-    /* NAV BAR */
+/* NAV BAR */
 
 .nav--links li{
     display: flex;
@@ -280,3 +281,18 @@ body{
     flex-direction: column;
     padding: -11px;
 }}
+
+@media (max-width: 550px) {
+/* CONTAINER PRINCIPAL */
+
+.container{
+    width: 110%;
+    margin-left: 13.5%;
+}
+
+.footer__links__link{
+    padding: 10px;
+    font-size: 1rem;
+}
+
+}
