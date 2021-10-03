@@ -290,6 +290,11 @@ body{
     margin-left: 13.5%;
 }
 
+.hidden{
+    display: none;
+}
+
+/* FOOTER */
 .footer__links__link{
     padding: 10px;
     font-size: 1rem;
