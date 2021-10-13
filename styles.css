@@ -265,11 +265,20 @@ body{
 
 @media (max-width: 870px) {
 
+.container{
+    width: 100%;
+    margin-left: 0;
+}
 
 /* HEADER */
 
 .header__images__profile__image{
     display: none;
+}
+.header__text{
+    width: 100%;
+    left: 0px;
+    margin-left: 140px;
 }
 
 /* NAV BAR */
@@ -287,7 +296,10 @@ body{
 
 .container{
     width: 110%;
-    margin-left: 13.5%;
+
+}
+.header__text{
+    margin-left: 80px;
 }
 
 .hidden{
